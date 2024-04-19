@@ -1,9 +1,6 @@
-//
-//  Reminder.swift
-//  Today
-//
-//  Created by Yulia Poznyakova on 17.04.2024.
-//
+/*
+ See LICENSE folder for this sample’s licensing information.
+ */
 
 import Foundation
 

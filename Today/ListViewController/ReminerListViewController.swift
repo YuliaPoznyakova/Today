@@ -14,7 +14,6 @@ class ReminderListViewController: UICollectionViewController {
 
         let listLayout = listLayout()
         collectionView.collectionViewLayout = listLayout
-        
         let cellRegistration = UICollectionView.CellRegistration(handler: cellRegistrationHandler)
 
         dataSource = DataSource(collectionView: collectionView) {

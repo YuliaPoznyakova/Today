@@ -49,7 +49,7 @@ extension ReminderListViewController {
         var backgroundConfiguration = UIBackgroundConfiguration.listGroupedCell()
         backgroundConfiguration.backgroundColor = .todayListCellBackground
         cell.backgroundConfiguration = backgroundConfiguration
-    }
+        }
     
     func reminder(withId id: Reminder.ID) -> Reminder {
         let index = reminders.indexOfReminder(withId: id)

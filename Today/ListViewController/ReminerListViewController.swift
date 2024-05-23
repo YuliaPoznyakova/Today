@@ -31,6 +31,20 @@ class ReminderListViewController: UICollectionViewController {
 
         collectionView.dataSource = dataSource
     }
+    
+    override func collectionView(
+        _  collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath
+    ) -> Bool {
+        let id = reminders[indexPath.item].id
+        pushPushDetailViewForReminder(withId: id)
+        return false
+    }
+    
+    func pushPushDetailViewForReminder(withId id: Reminder.ID) {
+        let reminder = reminder(withId: id)
+        let viewController = ReminderViewController(reminder: reminder)
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 
     private func listLayout() -> UICollectionViewCompositionalLayout {
         var listConfiguration = UICollectionLayoutListConfiguration(appearance: .grouped)

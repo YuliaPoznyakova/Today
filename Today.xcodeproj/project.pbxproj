@@ -24,6 +24,10 @@
 		2667AD992C0E1C0E00F4F935 /* ReminderListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2667AD982C0E1C0E00F4F935 /* ReminderListStyle.swift */; };
 		2667AD9E2C0F493400F4F935 /* ProgressHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2667AD9D2C0F493400F4F935 /* ProgressHeaderView.swift */; };
 		2667ADA22C120ECC00F4F935 /* CAGradientLayer+ListStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2667ADA12C120ECC00F4F935 /* CAGradientLayer+ListStyle.swift */; };
+		2667ADA62C1746A700F4F935 /* TodayError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2667ADA52C1746A700F4F935 /* TodayError.swift */; };
+		2696DB2B2C1F1531008BF368 /* EKEventStore+AsyncFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696DB2A2C1F1531008BF368 /* EKEventStore+AsyncFetch.swift */; };
+		2696DB2D2C1F1733008BF368 /* Reminder+EKReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696DB2C2C1F1733008BF368 /* Reminder+EKReminder.swift */; };
+		2696DB2F2C2046B4008BF368 /* ReminderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696DB2E2C2046B4008BF368 /* ReminderStore.swift */; };
 		AAD0598828EC8D10004F4962 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0598728EC8D10004F4962 /* AppDelegate.swift */; };
 		AAD0598A28EC8D10004F4962 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0598928EC8D10004F4962 /* SceneDelegate.swift */; };
 		AAD0598F28EC8D10004F4962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD0598D28EC8D10004F4962 /* Main.storyboard */; };
@@ -52,6 +56,10 @@
 		2667AD982C0E1C0E00F4F935 /* ReminderListStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListStyle.swift; sourceTree = "<group>"; };
 		2667AD9D2C0F493400F4F935 /* ProgressHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHeaderView.swift; sourceTree = "<group>"; };
 		2667ADA12C120ECC00F4F935 /* CAGradientLayer+ListStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+ListStyle.swift"; sourceTree = "<group>"; };
+		2667ADA52C1746A700F4F935 /* TodayError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayError.swift; sourceTree = "<group>"; };
+		2696DB2A2C1F1531008BF368 /* EKEventStore+AsyncFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EKEventStore+AsyncFetch.swift"; sourceTree = "<group>"; };
+		2696DB2C2C1F1733008BF368 /* Reminder+EKReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+EKReminder.swift"; sourceTree = "<group>"; };
+		2696DB2E2C2046B4008BF368 /* ReminderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStore.swift; sourceTree = "<group>"; };
 		AAD0598428EC8D10004F4962 /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD0598728EC8D10004F4962 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD0598928EC8D10004F4962 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -162,9 +170,13 @@
 			isa = PBXGroup;
 			children = (
 				AAD059CA28ECD992004F4962 /* UIColor+Today.swift */,
+				2696DB2E2C2046B4008BF368 /* ReminderStore.swift */,
 				2667ADA12C120ECC00F4F935 /* CAGradientLayer+ListStyle.swift */,
 				261E57412BD284DA0076253F /* Date+Today.swift */,
 				2667AD982C0E1C0E00F4F935 /* ReminderListStyle.swift */,
+				2667ADA52C1746A700F4F935 /* TodayError.swift */,
+				2696DB2A2C1F1531008BF368 /* EKEventStore+AsyncFetch.swift */,
+				2696DB2C2C1F1733008BF368 /* Reminder+EKReminder.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,6 +259,7 @@
 				263BCF222C06531C0037242D /* DatePickerContentView.swift in Sources */,
 				AAD0598828EC8D10004F4962 /* AppDelegate.swift in Sources */,
 				261E574E2BD93BC20076253F /* ReminderListViewController+Actions.swift in Sources */,
+				2667ADA62C1746A700F4F935 /* TodayError.swift in Sources */,
 				263BCF082BE3B9F00037242D /* ReminderViewController.swift in Sources */,
 				263BCF1E2C0634A60037242D /* UIContentConfiguration+Stateless.swift in Sources */,
 				AAD059CB28ECD992004F4962 /* UIColor+Today.swift in Sources */,
@@ -259,9 +272,12 @@
 				AAD0598A28EC8D10004F4962 /* SceneDelegate.swift in Sources */,
 				263BCF162C0619CC0037242D /* ReminderViewController+CellConfiguration.swift in Sources */,
 				261E574A2BD298D90076253F /* ReminderListViewController+DataSource.swift in Sources */,
+				2696DB2D2C1F1733008BF368 /* Reminder+EKReminder.swift in Sources */,
+				2696DB2B2C1F1531008BF368 /* EKEventStore+AsyncFetch.swift in Sources */,
 				261E57482BD28D130076253F /* ReminerListViewController.swift in Sources */,
 				2667ADA22C120ECC00F4F935 /* CAGradientLayer+ListStyle.swift in Sources */,
 				AAD059C428ECC017004F4962 /* Reminder.swift in Sources */,
+				2696DB2F2C2046B4008BF368 /* ReminderStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +429,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Today/Info.plist;
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Yoour reminders can help you stay on track.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -441,6 +458,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Today/Info.plist;
+				INFOPLIST_KEY_NSRemindersUsageDescription = "Yoour reminders can help you stay on track.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

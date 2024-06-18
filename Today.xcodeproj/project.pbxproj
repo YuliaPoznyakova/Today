@@ -28,6 +28,7 @@
 		2696DB2B2C1F1531008BF368 /* EKEventStore+AsyncFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696DB2A2C1F1531008BF368 /* EKEventStore+AsyncFetch.swift */; };
 		2696DB2D2C1F1733008BF368 /* Reminder+EKReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696DB2C2C1F1733008BF368 /* Reminder+EKReminder.swift */; };
 		2696DB2F2C2046B4008BF368 /* ReminderStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696DB2E2C2046B4008BF368 /* ReminderStore.swift */; };
+		2696DB372C21F13C008BF368 /* EKReminder+Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2696DB362C21F13C008BF368 /* EKReminder+Reminder.swift */; };
 		AAD0598828EC8D10004F4962 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0598728EC8D10004F4962 /* AppDelegate.swift */; };
 		AAD0598A28EC8D10004F4962 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0598928EC8D10004F4962 /* SceneDelegate.swift */; };
 		AAD0598F28EC8D10004F4962 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD0598D28EC8D10004F4962 /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 		2696DB2A2C1F1531008BF368 /* EKEventStore+AsyncFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EKEventStore+AsyncFetch.swift"; sourceTree = "<group>"; };
 		2696DB2C2C1F1733008BF368 /* Reminder+EKReminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reminder+EKReminder.swift"; sourceTree = "<group>"; };
 		2696DB2E2C2046B4008BF368 /* ReminderStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStore.swift; sourceTree = "<group>"; };
+		2696DB362C21F13C008BF368 /* EKReminder+Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EKReminder+Reminder.swift"; sourceTree = "<group>"; };
 		AAD0598428EC8D10004F4962 /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD0598728EC8D10004F4962 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD0598928EC8D10004F4962 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				AAD059CA28ECD992004F4962 /* UIColor+Today.swift */,
+				2696DB362C21F13C008BF368 /* EKReminder+Reminder.swift */,
 				2696DB2E2C2046B4008BF368 /* ReminderStore.swift */,
 				2667ADA12C120ECC00F4F935 /* CAGradientLayer+ListStyle.swift */,
 				261E57412BD284DA0076253F /* Date+Today.swift */,
@@ -278,6 +281,7 @@
 				2667ADA22C120ECC00F4F935 /* CAGradientLayer+ListStyle.swift in Sources */,
 				AAD059C428ECC017004F4962 /* Reminder.swift in Sources */,
 				2696DB2F2C2046B4008BF368 /* ReminderStore.swift in Sources */,
+				2696DB372C21F13C008BF368 /* EKReminder+Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
